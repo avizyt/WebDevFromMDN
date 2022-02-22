@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Images in HTML</title>
+        <link rel="stylesheet" href="styleimage.css" />
+    </head>
+    <body>
+        <header style="color: chocolate"><h1>Images in HTML</h1></header>
+        <div class="card">
+            <p
+                style="
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 600;
+                    color: black;
+                "
+            >
+                It is a Laptop
+            </p>
+            <img
+                src="./images/laptop.jpg"
+                alt="laptop"
+                width="400"
+                height="300"
+            />
+        </div>
+        <div class="card">
+            <p
+                style="
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 600;
+                    color: black;
+                "
+            >
+                It is Luna
+            </p>
+            <img src="./images/lunar.jpg" alt="Luna" width="400" height="300" />
+        </div>
+        <div class="card">
+            <p
+                style="
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 600;
+                    color: black;
+                "
+            >
+                A nice Lake
+            </p>
+            <img
+                src="./images/maroon.jpg"
+                alt="Lake"
+                width="400"
+                height="300"
+            />
+        </div>
+        <div>
+            <p>Video Example</p>
+            <video
+                controls
+                width="400"
+                height="300"
+                autoplay
+                loop
+                muted
+                preload="auto"
+            >
+                <source src="./images/wood.mp4" type="video/mp4" />
+            </video>
+            <audio
+                controls
+                src="./images/fivos-valachis-on-the-road-again.mp3"
+            ></audio>
+        </div>
+        <div>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/D9N7QaIOkG8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+        <object
+            data="./images/PythonNotes.pdf"
+            type="application/pdf"
+            width="800"
+            height="1200"
+        ></object>
+    </body>
+</html>

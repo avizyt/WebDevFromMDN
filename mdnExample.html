@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basic HTML Learning</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Basic Website Design</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!--A search form is another common non-linear way to navigate through website-->
+            <form action="">
+                <input type="search" name="q" placeholder="Search query" />
+                <input type="submit" value="Go!" />
+            </form>
+        </nav>
+
+        <!--Here is out page's main content-->
+        <main>
+            <!--Its content an article-->
+            <article>
+                <h2>Article heading</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque euismod, urna eu tincidunt consectetur, nisi
+                    nisl aliquam eros, eget tincidunt nisl nunc eu lectus.
+                </p>
+                <h3>Subsection</h3>
+                <p>
+                    Donec ut librero sed accu vehicula ultricies a non tortor.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper
+                    sed, adipiscing id dolor.
+                </p>
+
+                <p>
+                    Pelientesque auctor nisi id magna consequat sagittis.
+                    Curabitur dapibus, enim sit amet elit pharetra tincidunt
+                    feugiat nist imperdiet. Ut convallis libero in urna ultrices
+                    accumsan. Donec sed odio eros.
+                </p>
+
+                <h3>Subsection</h3>
+                <p id="donec_viverra">
+                    Donec viverra mi quis quam pulvinar at malesuada arcu
+                    rhoncus. Cum soclis natoque penatibus et manis dis
+                    parturient montes, nascetur ridiculus mus. In rutrum
+                    accumsan ultricies. Mauris vitae nisi at sem facilisis
+                    semper ac in est.
+                </p>
+
+                <p>
+                    Vivamus fermentum semper porta. Nunc diam velit, adipscing
+                    ut tristique vitae sagittis vel odio. Maecenas convallis
+                    ullamcorper ultricied. Curabitur ornare, ligula semper
+                    consectetur sagittis, nisi diam iaculis velit, is fringille
+                    sem nunc vet mi.
+                </p>
+                <!--how to use span element-->
+                <p>
+                    The King walked drunkenly back to his room at 01:00, the
+                    beer doing nothing to aid him as he staggered through the
+                    door
+                    <span class="editor-note"
+                        >[Editor's note: At this point in the play, the lights
+                        should be down low]</span
+                    >
+                </p>
+
+                <!--How to use div element-->
+                <div class="shopping-cart">
+                    <h2>Shopping Cart</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href=""><strong>Blue erring</strong></a
+                                >: $99.95.
+                            </p>
+                            <img src="./images/erring.jpg" alt="Blue Erring" />
+                        </li>
+
+                        <li>
+                            <p>
+                                <a href=""><strong> Golden Jhumka</strong></a
+                                >: 87.95.
+                            </p>
+                            <img
+                                src="./images/jhumka.jpg"
+                                alt="Golden Jhumka"
+                            />
+                        </li>
+                        <li>
+                            <p>
+                                <a href=""
+                                    ><strong>Oxidize erring</strong>: 94.50.</a
+                                >
+                            </p>
+                            <img
+                                src="./images/oxidize.jpeg"
+                                alt="Oxidize Erring"
+                            />
+                        </li>
+                    </ul>
+                    <p>Total cost: $237.89</p>
+                </div>
+
+                <!---How to use line break-->
+                <p>
+                    There once was a man name O'Dell <br />
+                    Who loved to write HTML <br />
+                    But his structure was bad, his sementics were sad <br />
+                    and his markup didnt read very well.
+                </p>
+
+                <!---How to use horizontal line break-->
+                <p>
+                    Ron was backed into a corner by the marauding netherbeasts.
+                    Scared, but determined to protect his friends, he raised his
+                    wand and prepared to do battle, hoping that his distress
+                    call had made it through.
+                </p>
+                <hr />
+                <p>
+                    Meanwhile, Harry was sitting at home, staring at his royalty
+                    statement and pondering when the next spin off series would
+                    come out, when an enchanted distress letter flew through his
+                    window and landed in his lap. He read it hazily and sighed;
+                    "better get back to work then", he mused.
+                </p>
+            </article>
+
+            <!--The aside content can also be nested within the main content-->
+            <aside>
+                <h2>Related</h2>
+
+                <ul>
+                    <li>
+                        <a href="#">Oh I do like to be beside the seaside</a>
+                    </li>
+                    <li><a href="#">Oh I do like to be deside the sea</a></li>
+                    <li><a href="#">Although in the North of England</a></li>
+                    <li><a href="#">It never stops raining</a></li>
+                    <li><a href="#">Oh well...</a></li>
+                </ul>
+            </aside>
+        </main>
+        <!--And here is our main footer that is used across all the pages of out website-->
+        <footer>
+            <p>@Copyright 2050 by nobody. All right reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid rgba(106, 106, 207, 0.6);
+    background: rgba(0, 0, 200, 03);
+    color: rgba(26, 221, 91, 0.6);
+    box-shadow: 1px, 1px, 2px, rgba(0, 0, 200, 03);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
