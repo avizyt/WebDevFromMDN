@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search Telephone</title>
+    </head>
+    <body>
+        <label for="search">Search by contact name: </label>
+        <input id="search" type="text" />
+        <button>Search</button>
+
+        <p></p>
+    </body>
+    <script>
+        const contacts = [
+            "Chris:2232322",
+            "Sarah:3453456",
+            "John:4545454",
+            "Sally:5676767",
+        ];
+        const para = document.querySelector("p");
+        const input = document.querySelector("input");
+        const btn = document.querySelector("button");
+
+        btn.addEventListener("click", () => {
+            const searchName = input.value.toLowerCase();
+            input.focus();
+            input.textContent = "";
+            para.textContent = "";
+            for (const contact of contacts) {
+                const splitContact = contact.split(":");
+                if (splitContact[0].toLowerCase() === searchName) {
+                    para.textContent =
+                        splitContact[0] +
+                        "'s number is " +
+                        splitContact[1] +
+                        ".";
+                    break;
+                }
+            }
+            if (para.textContent === "") {
+                para.textContent = "No contact found.";
+            }
+        });
+    </script>
+</html>
