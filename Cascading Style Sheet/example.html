@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>How css works</title>
+        <style>
+            header {
+                background: #c7f163;
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+                font-weight: 700;
+                color: black;
+
+                padding: 2px;
+                text-align: center;
+            }
+            h2 {
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+                font-weight: 700;
+                color: rgb(56, 132, 247);
+            }
+
+            #one {
+                font-family:'Times New Roman', Times, serif
+                font-weight: 300;
+                color: black;
+            }
+            span {
+                background-color: #c7f163;
+
+            }
+            span:hover {
+                background-color: #4bccec;
+                color: rgb(40, 44, 37);
+            }
+            article p:first-child::first-letter {
+                font-size: 170%;
+                font-weight: bold;
+            }
+            .box::before {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: #3f4561;
+                border: 1px solid black;
+            }
+            .box::after {
+                content: "↪";
+
+            }
+        </style>
+    </head>
+    <body>
+        <header><h1>How CSS Works</h1></header>
+        <h2><strong>CSS</strong>Fundamental</h2>
+        <div class="div1">
+            <p id="one">
+                CSS, fullform is <span>Cascading Style Sheet</span> . It is used
+                for styleing the HTMl pages.
+            </p>
+        </div>
+        <article>
+            <p>
+                CSS is a language that describes the style of an HTML document.
+                CSS describes how HTML elements should be displayed.
+            </p>
+            <p>
+                Pseudo-elements behave in a similar way. However, they act as if
+                you had added a whole new HTML element into the markup, rather
+                than applying a class to existing elements. Pseudo-elements
+                start with a double colon
+            </p>
+            <p>
+                If you wanted to select the first line of a paragraph you could
+                wrap it in a span element and use an element selector; however,
+                that would fail if the number of words you had wrapped were
+                longer or shorter than the parent element's width. As we tend
+                not to know how many words will fit on a line — as that will
+                change if the screen width or font-size changes — it is
+                impossible to robustly do this by adding HTML.
+            </p>
+        </article>
+        <div class="div2">
+            <p class="box">Content in the box in my HTML page.</p>
+        </div>
+    </body>
+</html>

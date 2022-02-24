@@ -1,0 +1,36 @@
+header {
+    width: 7in;
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+span {
+    font-size: 120%;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-weight: 600;
+}
+p {
+    font-size: 20px;
+}
+code {
+    font-weight: 600;
+    color: rgb(67, 121, 202);
+}
+code:hover {
+    color: rgb(51, 34, 11);
+}
+
+.info {
+    width: 7in;
+    height: 5in;
+    background-color: bisque;
+    border: 2px;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
